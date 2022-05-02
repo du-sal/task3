@@ -1,0 +1,48 @@
+
+
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="mainbox">
+        <h1>안녕하세요!</h1>
+        <h1>서연미입니다.</h1>
+        </div>
+
+        <p class="category">ABOUT ME</p>  
+        <ul class="aboutme">
+            <li>나이: 23살</li>
+            <li>전공: 경영학과</li>
+            <li>MBTI: ESFP</li>
+        </ul>
+
+        <p class="category">LIKE</p>
+        <ul class="like">
+            
+            <li>취미</li>
+            <ol class= "content">
+                <li>필름사진 찍기</li>
+                <li>넷플릭스 구경하기</li>
+            </ol>
+
+            <li>좋아하는 음식</li>
+                <p class= "content">  아이스크림</p>
+                <p class= "content">  엽떡</p>
+            
+            <li>좋아하는 공간</li>
+                <p class= "content">노들섬</p>
+                <p class= "content">우도</p>
+    
+
+            
+            
+            
+
+        </ul>
+
+    <!-- firstpage 링크 연결 -->
+    <a href="{% url 'showfirst'%}">First page</a>
+    <!-- secondpage 링크 연결-->
+    <a href="{% url 'showsecond'%}">Second page</a>
+
+{% endblock %}  

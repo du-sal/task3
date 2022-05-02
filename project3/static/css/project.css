@@ -1,0 +1,44 @@
+.mainbox{
+    border: thick double #8258FA;
+    width: 400px;
+    text-align: center;
+    color: darkslateblue;
+    margin-left: auto;
+    margin-right: auto;
+    padding:15px;
+    box-shadow: 3px 3px 1px #965fdd;
+
+}
+
+.category{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color:#440588;
+    text-decoration: underline;
+    font-size:20px;
+}
+.aboutme{
+    font-size: 17px;
+    color:#30093c;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.like{
+    font-size:17px;
+    color:#30093c;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content{
+    font-size: 15px;
+    color:#1C1C1C
+    /*display table;
+    margin-left: auto;
+    margin-right: auto;
+*/
+}
