@@ -123,7 +123,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #STATIC 상속 설정
-STATICFILEDS_DIRS=[
+STATIC_URL= 'static/'
+STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'project3','static')
 ]
 

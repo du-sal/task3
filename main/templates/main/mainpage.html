@@ -1,9 +1,11 @@
 
 
 {% extends 'base.html' %}
-
+{% load static %}
 
 {% block content %}
+
+
     <div class="mainbox">
         <h1>안녕하세요!</h1>
         <h1>서연미입니다.</h1>
@@ -44,5 +46,21 @@
     <a href="{% url 'showfirst'%}">First page</a>
     <!-- secondpage 링크 연결-->
     <a href="{% url 'showsecond'%}">Second page</a>
+    <img src="{% static 'images/hi.jpg' %}">
+<h2><a href="{% url 'new'%}">글쓰기</a></h2>
 
+<h1>글 목록</h1>
+
+<div>
+{%for post in posts %}
+<div>
+    <h3>{{post.title}}</h3>
+    {{post.writer}}<br>
+    {{post.summary}}
+<a href="{% url 'detail' post.id %}">...자세히</a>
+    <br>
+</div>
+{% endfor%}
+
+</div>
 {% endblock %}  
