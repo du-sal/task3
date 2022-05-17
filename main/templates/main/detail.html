@@ -8,7 +8,7 @@
 날짜: {{post.pub_date}}
 <hr>
 {% if post.image %}
-<p><img src="{{ post.image.url }}" alt="사진"></p>
+    <p><img src="{{ post.image.url }}" alt="사진"></p>
 {% endif %}
 <p>{{post.body}}</p>
 <a href="{%url 'main:edit' post.id%}">수정하기</a>
