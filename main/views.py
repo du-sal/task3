@@ -6,7 +6,7 @@ from django.utils import timezone
 # mainpage view 함수
 def main(request):
     return render(request, 'main/mainpage.html')
-
+######showmain->posts####
 def posts(request):
     posts= Post.objects.all()
     return render(request, 'main/mainpage.html',{'posts': posts})
