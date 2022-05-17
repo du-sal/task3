@@ -14,20 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from main import views
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #mainpage URL 연결하기 with 별명사용
-    path('', views.showmain, name="showmain"),
-
-    # firstpage URL 연결하기 with 별명사용
-    path('firstpage/', views.showfirst, name="showfirst"),
-
-    # secondpage URL 연결하기 with 별명사용
-    path('secondpage/', views.showsecond, name="showsecond"),
-    path('<int:id>', views.detail, name="detail"),
-    path('new/', views.new, name="new"),
-    path('create/', views.create, name="create"),
+    path('',include('main.urls')),
 ]
